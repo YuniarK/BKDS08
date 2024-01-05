@@ -109,9 +109,6 @@ import streamlit as st
 
 # ... (previous code)
 
-# Set the background image
-bg_image = "anime.jpg"  # Change this to the path of your image
-
 # STREAMLIT
 st.set_page_config(
     page_title="Hungarian Heart Disease",
@@ -124,7 +121,7 @@ st.set_page_config(
 background_style = f"""
 <style>
     body {{
-        background-image: url('{bg_image}');
+        background-image: url('{anime.jpg}');
         background-size: cover;
     }}
 </style>
