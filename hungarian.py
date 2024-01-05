@@ -97,12 +97,40 @@ df_final['target'] = y
 
 # ========================================================================================================================================================================================
 
+import itertools
+import time
+import pickle
+
+import pandas as pd
+import numpy as np
+from imblearn.over_sampling import SMOTE
+from sklearn.metrics import accuracy_score
+import streamlit as st
+
+# ... (previous code)
+
+# Set the background image
+bg_image = "anime.jpg"  # Change this to the path of your image
+
 # STREAMLIT
 st.set_page_config(
-  page_title = "Hungarian Heart Disease",
-  page_icon = ":heart:"
-
+    page_title="Hungarian Heart Disease",
+    page_icon=":heart:",
+    layout="wide",  # Choose layout "wide" or "centered" based on your preference
+    initial_sidebar_state="collapsed",  # Choose "auto", "expanded", or "collapsed"
 )
+
+# Add background image style
+background_style = f"""
+<style>
+    body {{
+        background-image: url('{bg_image}');
+        background-size: cover;
+    }}
+</style>
+"""
+st.markdown(background_style, unsafe_allow_html=True)
+
 # ...
 
 st.title("Hungarian Heart Disease")
