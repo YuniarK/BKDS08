@@ -99,15 +99,9 @@ df_final['target'] = y
 
 # STREAMLIT
 st.set_page_config(
-    page_title="Hungarian Heart Disease",
-    page_icon=":heart:",
-    layout="wide",  # Set layout to wide for better appearance
-    initial_sidebar_state="collapsed",  # Optional: Collapsed sidebar by default
-    background_color="#f0f0f0"  # Set your desired background color
+  page_title = "Hungarian Heart Disease",
+  page_icon = ":heart:"
 )
-
-# Rest of your Streamlit code remains unchanged
-
 # ...
 
 st.title("Hungarian Heart Disease")
