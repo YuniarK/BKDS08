@@ -115,13 +115,14 @@ st.set_page_config(
     page_icon=":heart:",
     layout="wide",  # Choose layout "wide" or "centered" based on your preference
     initial_sidebar_state="collapsed",  # Choose "auto", "expanded", or "collapsed"
+    bg_image = "image.jpg"
 )
 
 # Add background image style
 background_style = f"""
 <style>
     body {{
-        background-image: url('{anime.jpg}');
+        background-image: url('{bg_image}');
         background-size: cover;
     }}
 </style>
